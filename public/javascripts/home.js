@@ -1,7 +1,9 @@
 document.addEventListener("DOMContentLoaded", async () => {
     await renderUser();
     await loadFeed();
-    await loadWhoToFollow();
+    if (window.innerWidth > 768) {
+        await loadWhoToFollow();
+    }
 });
 
 
@@ -9,6 +11,7 @@ document.addEventListener("DOMContentLoaded", async () => {
 document.querySelector('.post-btn').addEventListener('click', async () => {
     const tweet = textarea.value.trim();
     const postImg = document.getElementById("post-img-upload");
+    playSound("./wav/kill.wav");
 
     try {
         let data;
