@@ -1,4 +1,5 @@
 document.addEventListener("DOMContentLoaded", async () => {
+    localStorage.setItem('mute', true); 
     await renderUser();
     await loadFeed();
     if (window.innerWidth > 768) {
