@@ -32,8 +32,8 @@ async function loadUserProfile(username) {
         profileHeader.innerHTML = `
             <img src="${user.avatar || "/img/png/user.png"}" alt="User avatar" class="avatar-bounce profile-avatar other-avatar">
             <div class="profile-info">
-                <div class="username user-name profile-name">${user.name}</div>
-                <div class="handle user-username profile-username">@${user.username}</div>
+                <div class="username profile-name">${user.name}</div>
+                <div class="handle profile-username">@${user.username}</div>
                 <p class="bio user-bio profile-bio" id="user-bio">${user.bio || ""}</p>
                 <div class="follow-stats">
                     <span class="stat"><span class="count user-following">${user.followingCount}</span> Following</span>
