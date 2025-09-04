@@ -44,5 +44,3 @@ Zylo is a **full-stack social media web application** built with the **MERN stac
 
 ---
 
-## 📂 Project Structure
-
